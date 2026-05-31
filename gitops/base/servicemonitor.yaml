@@ -3,6 +3,9 @@ kind: ServiceMonitor
 
 metadata:
   name: go-api-monitor
+  namespace: dev
+  labels:
+    release: prometheus
 
 spec:
   selector:
